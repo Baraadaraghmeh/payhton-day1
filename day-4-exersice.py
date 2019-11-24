@@ -58,6 +58,9 @@ print(filterd)
 #q9......................................................................
 x=list(map(int,input("Enter a multiple value").split()))   
 print("List of student:",x)
+"""output:
+    List of student: [1, 20, 10]
+    """
 #q10....................................................................
 def newfunc(a):
     return a*a
