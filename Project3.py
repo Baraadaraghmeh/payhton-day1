@@ -33,7 +33,7 @@ def database():
    cursor.execute('CREATE TABLE IF NOT EXISTS Employees (Fullname TEXT,Number INT,Nationality TEXT,Date TEXT, Gender TEXT,Address TEXT,Department TEXT , Salary INT)')
    cursor.execute('INSERT INTO Employees (FullName,Number,Nationality,Date,Gender,Address,Department,Salary) VALUES(?,?,?,?,?,?,?,?)',(name1,number,nationality,date,gender,address,department,salary))
    for row in cursor.execute('SELECT * FROM Employees ORDER BY Salary'):
-      print(row)
+       print(row)
    conn.commit()
    
    
